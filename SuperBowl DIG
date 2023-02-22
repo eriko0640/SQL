@@ -88,3 +88,12 @@ GROUP BY "Ending_Pts";
 SELECT Stadium FROM superbowls WHERE(Winner_Pts AND Date>1980)ORDER BY Winner_Pts;
 
 SELECT Loser FROM superbowls Where(Loser_Pts OR Date <2006) ORDER BY Date;
+
+SELECT Loser,
+CASE
+WHEN Loser_Pts<25 THEN "Maxlsr_Pts"
+WHEN Loser_Pts<20 THEN "Midlsr_Pts"
+WHEN Loser_Pts<15 THEN "Minlsr_Pts"
+ELSE "Not applicable"
+END AS "Rangeloser_Pts" FROM superbowls
+GROUP BY "Rangeloser_Pts"
