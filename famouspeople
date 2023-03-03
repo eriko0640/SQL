@@ -1,0 +1,27 @@
+/* Create table about the people and what they do here */
+CREATE TABLE famous_people (id INTEGER PRIMARY KEY, name text, occupation text, location text);
+
+INSERT INTO famous_people Values (1,"Johnny Debb", "movie star", "kentucky");
+INSERT INTO famous_people Values (2,"Jim Carry","comedian", "Canada");
+INSERT INTO famous_people Values (3,"Robert Downey Jr","movie star", "New York");
+INSERT INTO famous_people Values (4,"Morgan Freeman","movie star", "Tennesse");
+INSERT INTO famous_people Values (5,"Steven Spieldberg","director","Ohio");
+INSERT INTO famous_people Values (6,"Adam Sandler","comedian","New York");
+INSERT INTO famous_people Values (7,"James Cameron", "writer", "Canada");
+INSERT INTO famous_people Values (8,"J.K.Rowling", "writer", "England");
+INSERT INTO famous_people Values (9,"Frida Kahlo","artist","Mexico");
+INSERT INTO famous_people Values (10,"William Shakespear","Poet","England");
+INSERT INTO famous_people Values (11,"David Beckham", "athlete","England");
+INSERT INTO famous_people Values (12,"Tiger Woods", "athlete","California");
+INSERT INTO famous_people Values (13, "Frederick Chopin","Compuser","Poland");
+INSERT INTO famous_people Values (14,"Stephen King","Author","Maine");
+INSERT INTO famous_people Values (15,"Michael Jordan","Athlete","New York");
+
+CREATE TABLE Athletes (id INTEGER PRIMARY KEY, name text, sport text, location text);
+INSERT INTO Athletes Values (1,"David Beckham","Soccer","England");
+INSERT INTO Athletes Values (2,"Tiger Woods","Golf", "California");
+INSERT INTO Athletes Values (3,"Michael Jordan","Basketball","New York");
+
+CREATE TABLE Actors (id INTEGER PRIMAEY KEY,name text, 
+
+
